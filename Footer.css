@@ -1,0 +1,23 @@
+/* Footer styles */
+footer {
+    background-color: #0d0b0b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #f4f4f9;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

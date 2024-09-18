@@ -1,0 +1,94 @@
+/* Styling the navbar */
+nav {
+  background-color:white;
+  padding: 10px; 
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #827474;
+  
+}
+
+h1 {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:xx-large;
+}
+/* Container to align input and button */
+.search-container {
+  display: flex;
+  justify-content: center; /* Centers the search bar */
+  align-items: center; /* Ensures input and button align vertically */
+  margin: 20px;
+}
+
+/* Styling for the input field */
+.search-input {
+  width: 300px; /* Adjust as needed */
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 25px 0 0 25px; /* Rounded left corners */
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1; /* Ensures input takes up available space */
+}
+
+/* Add focus effect on input */
+.search-input:focus {
+  border-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the search button */
+.search-button {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-left: none; /* Removes the left border for a seamless look */
+  border-radius: 0 25px 25px 0; /* Rounded right corners */
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Matches input shadow */
+}
+
+/* Add hover effect to the button */
+.search-button:hover {
+  background-color: #555;
+  border-color: #333;
+}
+
+/* Ensure proper spacing and responsiveness */
+@media (max-width: 600px) {
+  .search-input {
+    width: 200px;
+  }
+
+  .search-button {
+    padding: 10px;
+  }
+}
+
